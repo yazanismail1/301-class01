@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header{
+  margin: 0;
+  background-color: #E0FCFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+  text-align: center;
+  justify-content:space-around
+}
+
+.beast-card {
+  border: 1px solid #6EB6FF;
+  border-radius: 25px;
+  width: 300px;
+}
+
+div img {
+  width: 250px;
+}
+
+.beast-card:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+footer {
+  margin: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #E0FCFF;
+}
+
+footer p {
+  color: #7098DA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
