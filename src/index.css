@@ -18,6 +18,8 @@ header{
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 100px;
+  align-items: center;
 }
 
 header h1 {
@@ -34,17 +36,29 @@ header h1 {
 }
 
 .beast-card {
-  border: 1px solid #6EB6FF;
-  border-radius: 25px;
   width: 300px;
+}
+.beast-card p {
+  padding: 0 15px 0 15px;
 }
 
 div img {
   width: 250px;
+  height: 250px;
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
 }
 
 .beast-card:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.desc{
+  margin-top: 10px;
+}
+
+.vote{
+  font-weight: 500;
 }
 
 footer {

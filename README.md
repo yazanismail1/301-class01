@@ -7,8 +7,12 @@
 
 ---
 
-Start Lab Work: 6:15 PM
+Number and name of feature: ________________________________
 
-Finish Lab Work: 9:15 PM
+Estimate of time needed to complete: 3 hours
 
-Time Took: 3 hours
+Start time: 1:10pm
+
+Finish time: _____
+
+Actual time needed to complete: _____
