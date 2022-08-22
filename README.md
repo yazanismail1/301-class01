@@ -7,12 +7,12 @@
 
 ---
 
-Number and name of feature: ________________________________
+Number and name of feature: render all the cards from the JSON, voting for each horned beast and interaction with the header and footer.
 
 Estimate of time needed to complete: 3 hours
 
 Start time: 1:10pm
 
-Finish time: _____
+Finish time: 2:30pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1.2 hours
