@@ -7,8 +7,12 @@
 
 ---
 
-Start Lab Work: 6:15 PM
+Number and name of feature: render all the cards from the JSON, voting for each horned beast and interaction with the header and footer.
 
-Finish Lab Work: 9:15 PM
+Estimate of time needed to complete: 3 hours
 
-Time Took: 3 hours
+Start time: 1:10pm
+
+Finish time: 2:30pm
+
+Actual time needed to complete: 1.2 hours
