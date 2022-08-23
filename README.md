@@ -15,4 +15,4 @@ Start time: 1:00pm
 
 Finish time: 11.40pm
 
-Actual time needed to complete: 11 hours
+Actual time needed to complete: 11 hours 

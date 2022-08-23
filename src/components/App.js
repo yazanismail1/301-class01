@@ -23,15 +23,15 @@ class App extends React.Component {
 
     modalGetData = (key) => key;
 
-    modalData = () => {
-        const newData = data.filter(item => {
-            if(item._id === this.toGetData){
-                return item;
-            }
+    // modalData = () => {
+    //     const newData = data.filter(item => {
+    //         if(item._id === this.toGetData){
+    //             return item;
+    //         }
             
-        })
-        return newData;
-    }
+    //     })
+    //     return newData;
+    // }
 
     render() {
         return(
@@ -46,9 +46,9 @@ class App extends React.Component {
                     <SelectedBeast 
                         show={this.state.show} 
                         hideCard={this.showModal}
-                        title={this.modalData.title}
-                        imgSrc={this.modalData.img_url}
-                        desc={this.modalData.description}
+                        // title={this.modalData.title}
+                        // imgSrc={this.modalData.img_url}
+                        // desc={this.modalData.description}
                     />
                 </div>
                 <Footer />
