@@ -7,12 +7,12 @@
 
 ---
 
-Number and name of feature: render all the cards from the JSON, voting for each horned beast and interaction with the header and footer.
+Number and name of feature: Display a modal on click.
 
-Estimate of time needed to complete: 3 hours
+Estimate of time needed to complete: 5 hours
 
-Start time: 1:10pm
+Start time: 1:00pm
 
-Finish time: 2:30pm
+Finish time: 11.40pm
 
-Actual time needed to complete: 1.2 hours
+Actual time needed to complete: 11 hours
