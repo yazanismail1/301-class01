@@ -32,13 +32,13 @@ class SelectedBeast extends React.Component {
       >
         <Modal.Header>
           <Modal.Title id="contained-modal-title-vcenter">
-          <h2>{this.props.title}</h2>
+          <h2>"{this.props.title}"</h2>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={this.props.image_url} alt={this.props.title}/>
+          <img src="{this.props.image_url}" alt="{this.props.title}"/>
           <p>
-          {this.props.desc}
+          {/* {this.props.desc} */}
           </p>
         </Modal.Body>
         <Modal.Footer>
