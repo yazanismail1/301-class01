@@ -1,60 +1,54 @@
 import React from "react";
-import Header from './Header';
-import Footer from './Footer';
-import Main from './Main';
+import Header from "./Header";
+import Footer from "./Footer";
+import Main from "./Main";
 import data from "./Data";
 import SelectedBeast from "./selectedBeast";
 
-
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      show: false,
+      title: "",
+      img: "",
+      desc: "",
+    };
+  }
 
-    constructor(props){
-        super(props);
-        this.state = {
-            show : false
-        }
-    }
+  showModal = (title, img, desc) => {
+    this.setState({
+      show: true,
+      title: title,
+      img: img,
+      desc: desc,
+    });
+  };
 
-    showModal = () => {
-        this.setState({
-            show: !(this.state.show)
-        })
-    }
+  closeModal = () => {
+    this.setState({
+      show: false,
+    });
+  };
 
-    modalGetData = (key) => key;
-
-    // modalData = () => {
-    //     const newData = data.filter(item => {
-    //         if(item._id === this.toGetData){
-    //             return item;
-    //         }
-            
-    //     })
-    //     return newData;
-    // }
-
-    render() {
-        return(
-            <div>
-                <Header />
-                <div className="cards">   
-                    <Main 
-                        data={data}
-                        showModalCard={this.showModal}
-                        toGetData={this.modalGetData}
-                    />
-                    <SelectedBeast 
-                        show={this.state.show} 
-                        hideCard={this.showModal}
-                        // title={this.modalData.title}
-                        // imgSrc={this.modalData.img_url}
-                        // desc={this.modalData.description}
-                    />
-                </div>
-                <Footer />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <Header />
+        <div className="cards">
+          <Main 
+          data={data} 
+          showModal={this.showModal} />
+          <SelectedBeast
+            show={this.state.show}
+            selectedBeastData={this.state}
+            closeModal={this.closeModal}
+          />
+        </div>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
