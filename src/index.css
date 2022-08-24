@@ -55,6 +55,7 @@ div img {
 
 .desc{
   margin-top: 10px;
+  height: 100px;
 }
 
 .vote{
@@ -74,4 +75,21 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+h5 {
+  width: 250px;
+  text-align:center;
+  padding-top: 10px;
+}
+
+.mb-3 {
+  padding: 15px;
+  width: 1000px;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.cardTitle {
+  height: 50px;
 }
