@@ -8,15 +8,12 @@ class SelectedBeast extends React.Component {
         super(props);
         this.state = ({
             show : this.props.show,
-            title : "",
-            imgSrc : "",
-            description : "",
         })
     }
 
     showCardModal = () => {
         this.setState({
-            show : false,
+            show : false,      
         })
         this.props.hideCard()
         
@@ -32,7 +29,7 @@ class SelectedBeast extends React.Component {
       >
         <Modal.Header>
           <Modal.Title id="contained-modal-title-vcenter">
-          <h2>"{this.props.title}"</h2>
+          <h2>"{this.props.test}"</h2>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

@@ -13,7 +13,11 @@ class Main extends React.Component {
                     img = {element.image_url}
                     description = {element.description}
                     stateUpdate = {this.props.showModalCard}
-                    toGetData = {this.props.toGetData}
+                    getId = {this.props.toGetId}
+                    getTitle = {this.props.toGetTitle}
+                    getDesc = {this.props.toGetDesc}
+                    getImg = {this.props.toGetImg}
+
                 /> 
             )
         )

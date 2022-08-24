@@ -16,7 +16,11 @@ class HornedBeast extends React.Component {
           voteNums : this.state.voteNums + "🦄"
       })
       this.props.stateUpdate();
-      this.props.toGetData(this.props.id);
+      this.props.getId(this.props.id);
+      this.props.getTitle(this.props.title);
+      this.props.getDesc(this.props.description);
+      this.props.getImg(this.props.img);
+
     };
 
   render() {

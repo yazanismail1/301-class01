@@ -21,17 +21,13 @@ class App extends React.Component {
         })
     }
 
-    modalGetData = (key) => key;
+    modalGetId = key => key;
+    modalGetTitle = key => key;
+    modalGetDesc = key => key;
+    modalGetImg = key => key;
 
-    // modalData = () => {
-    //     const newData = data.filter(item => {
-    //         if(item._id === this.toGetData){
-    //             return item;
-    //         }
-            
-    //     })
-    //     return newData;
-    // }
+    
+
 
     render() {
         return(
@@ -41,11 +37,15 @@ class App extends React.Component {
                     <Main 
                         data={data}
                         showModalCard={this.showModal}
-                        toGetData={this.modalGetData}
+                        toGetId={this.modalGetId}
+                        toGetTitle={this.modalGetTitle}
+                        toGetDesc={this.modalGetDesc}
+                        toGetImg={this.modalGetImg}
                     />
                     <SelectedBeast 
                         show={this.state.show} 
                         hideCard={this.showModal}
+                        test={this.modalGetTitle()}
                         // title={this.modalData.title}
                         // imgSrc={this.modalData.img_url}
                         // desc={this.modalData.description}
