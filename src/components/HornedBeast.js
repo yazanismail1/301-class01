@@ -1,27 +1,21 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
+import { Button } from "react-bootstrap";
 
 class HornedBeast extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-        voteNums: ""
-      };
+      voteNums: "",
+    };
   }
 
   increaseVotes = () => {
-      this.setState({
-          voteNums : this.state.voteNums + "🦄"
-      })
-      this.props.stateUpdate();
-      this.props.getId(this.props.id);
-      this.props.getTitle(this.props.title);
-      this.props.getDesc(this.props.description);
-      this.props.getImg(this.props.img);
-
-    };
+    this.setState({
+      voteNums: this.state.voteNums + "🦄",
+    });
+  };
 
   render() {
     return (
@@ -36,6 +30,17 @@ class HornedBeast extends React.Component {
           <Card.Text className="desc">{this.props.description}</Card.Text>
           <Card.Text className="vote">Votes</Card.Text>
           <Card.Text>{this.state.voteNums}</Card.Text>
+          <Button
+            onClick={() => {
+              this.props.showModal(
+                this.props.title,
+                this.props.img,
+                this.props.description
+              );
+            }}
+          >
+            Expand
+          </Button>
         </Card.Body>
       </Card>
     );
