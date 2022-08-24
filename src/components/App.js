@@ -4,12 +4,14 @@ import Footer from "./Footer";
 import Main from "./Main";
 import data from "./Data";
 import SelectedBeast from "./selectedBeast";
+import FilterForm from "./Form";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       show: false,
+      horns: "",
       title: "",
       img: "",
       desc: "",
@@ -31,14 +33,25 @@ class App extends React.Component {
     });
   };
 
+  HornNums = (e) => {
+    this.setState({
+        horns : e.target.value,
+    })
+  }
+
   render() {
     return (
       <div>
         <Header />
+        <FilterForm 
+            HornNums={this.HornNums}
+        />
         <div className="cards">
           <Main 
           data={data} 
-          showModal={this.showModal} />
+          showModal={this.showModal}
+          HornNums={this.state}
+          />
           <SelectedBeast
             show={this.state.show}
             selectedBeastData={this.state}
